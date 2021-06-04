@@ -1,6 +1,5 @@
 ﻿using Discord.Commands;
 using Discord.WebSocket;
-using EdgyDiscordBotName.TypeReaders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +18,6 @@ namespace EdgyDiscordBotName.Core
         public CommandHandler(DiscordSocketClient client)
         {
             _commands = new CommandService();
-            _commands.AddTypeReader(typeof(List<string>), new ListStringTypeReader());
 
             _client = client;
         }

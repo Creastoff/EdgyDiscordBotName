@@ -27,7 +27,6 @@ namespace EdgyDiscordBotName.Commands
             var templates = await ImgFlipClient.GetTemplates();
             string message = $"@{Context.Message.Author} ";
 
-
             if (templates.Success)
             {
                 foreach(var meme in templates.Data.Memes)

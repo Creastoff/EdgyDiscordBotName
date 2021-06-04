@@ -10,4 +10,8 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0-preview.3.21201.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessDeath\FitnessDeath.csproj" />
+  </ItemGroup>
+
 </Project>
